@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.type {
+    background-color: rgb(68, 68, 68);
+    overflow: hidden;
+    flex-basis: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.type p {
+    padding: 15px;
+    color: white
+}
+
+.chat {
+    background-color: rgb(30, 33, 41);
+    overflow-y: auto;
+    flex-basis: 55%;
+    position: relative;
+}
+
+textarea {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    resize: none;
+    width: 100%;
+}
+
+.type_box {
+    width: 30%;
+}
+
+.message_list {
+    list-style: none;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 15%;
+    right: 15%;
+    max-height: calc(100% - 35px);
+}
+
+.message_list li {
+    /* background-color: rgb(58, 126, 244); */
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.message_list p {
+    max-width: 60%;
+    padding: 15px 25px;
+    border-radius: 30px;
+    display: inline-block;
+} .message_list p pre {
+    text-wrap: wrap;
+}
+
+.message_list .first p {
+    background-color: rgb(47, 53, 71);
+}
+.message_list .second p {
+    background-color: rgb(58, 126, 244);
+} .message_list .second {
+    text-align: right;
+}
+
+pre {
+    text-align: left;
+}
